@@ -1,0 +1,21 @@
+[
+    {
+        "nombre": "Pastel de Chocolate",
+        "descripcion": "Delicioso pastel de chocolate con cobertura de crema.",
+        "precio": 10.00,
+        "imagen": "pastel_chocolate.jpg"
+    },
+    {
+        "nombre": "Galletas de la Casa Gryffindor",
+        "descripcion": "Galletas mágicas con los colores de Gryffindor.",
+        "precio": 8.00,
+        "imagen": "galletas_gryffindor.jpg"
+    },
+    {
+        "nombre": "Cerveza de Mantequilla",
+        "descripcion": "Una botella de cerveza de mantequilla, ¡sabor mágico!",
+        "precio": 5.00,
+        "imagen": "cerveza_mantequilla.jpg"
+    }
+]
+
