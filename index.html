@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Mágica de Postres de Harry Potter</title>
+    <title>Tienda Mágica de Postres</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Tienda Mágica de Postres de Harry Potter</h1>
+    <header class='main-header'>
+        <h1>Bienvenido a la Tienda de Postres Mágicos</h1>
+            <p>¡Descubre los dulces y postres más deliciosos!</p>
+            <span class='main-header'> Contacto </span>
+            <p class='main-header'> Llamar: 985668951 </p>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Carrito</a></li>
+                <li><a href="index.html">Vaciar carrito</a></li>
+                <li><button id="mostrar-carrito">Mostrar Carrito</button><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
+        <div class="main-header__cointainer">
+
+        </div>
     </header>
     <main>
         <section id="productos">
@@ -25,11 +31,26 @@
     <aside id="carrito">
         <h2>Carrito de Compras</h2>
         <ul id="lista-carrito">
-            <!-- Los productos seleccionados se mostrarán aquí -->
+            
         </ul>
         <p id="total">Total: $0.00</p>
         <button id="vaciar-carrito">Vaciar Carrito</button>
     </aside>
+     
+
+     <!-- Ventana emergente modal -->
+     <div id="carrito-modal" class="modal">
+         <div class="modal-contenido">
+             <span class="cerrar-modal" id="cerrar-carrito">&times;</span>
+             <h2>Carrito de Compras</h2>
+             <ul id="lista-carrito-modal">
+                 <!-- Aquí se mostrarán los productos del carrito -->
+             </ul>
+             <p id="total-carrito-modal">Total: $0.00</p>
+         </div>
+     </div>
+ 
+     <!-- Agrega tus enlaces a archivos JavaScript aquí -->
     <footer>
         <p>&copy; 2023 Tienda Mágica de Postres de Harry Potter</p>
     </footer>
