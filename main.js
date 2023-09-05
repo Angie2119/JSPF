@@ -140,29 +140,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
 
-    // Función para cargar productos en el contenedor
-    function cargarProductos() {
-        
-        fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-        const productosContainer = document.getElementById('productos');
-        data.forEach(producto => {
-            const productoHTML = `
-                <article class="producto">
-                    <img src="images/${producto.imagen}" alt="${producto.nombre}">
-                    <h2>${producto.nombre}</h2>
-                    <p>${producto.descripcion}</p>
-                    <p class="precio">$${producto.precio.toFixed(2)}</p>
-                    <button class="agregar-carrito" data-id="${producto.id}">Agregar al carrito</button>
-                </article>
-            `;
-            productosContainer.innerHTML += productoHTML;
-            });
-        })
-    }
-    // Llama a la función para cargar productos
-cargarProductos();
-
-
 });
